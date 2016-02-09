@@ -1,0 +1,111 @@
+body {
+	font-family: "Verdana", Arial, sans-serif;
+background-color: grey;
+}
+
+a {
+	text-decoration: none;
+	color: blue;
+}
+a:visited {
+	text-decoration: none;
+	color: blue;
+}
+a:hover {
+	color: red;
+}
+
+div.header {
+	text-align: center;
+}
+div.menu {
+	text-align: center;
+	background-color: white;
+	padding: 10px;
+	border: 2px solid black;
+	margin: auto;
+	min-width: 1080px;
+	max-width: 1440px;
+}
+div.searchbar {
+	text-align: left;
+}
+div.menuBar a {
+	background-color: #C8C8C8;
+	border: 1px solid grey;
+	text-decoration: none;
+	color: blue;
+	padding: 2px 2px 2px 2px;
+}
+div.menuBar a:hover {
+	background-color: #6DB2FF;
+}
+div.menuBar a:active {
+	background-color: red;
+}
+
+div.content {
+	background-color: white;
+	padding: 10px;
+	border: 2px solid black;
+	margin: auto;
+	min-width: 1080px;
+	max-width: 1440px;
+	min-height: 720px;
+}
+div.content h2 {
+	text-align: center;
+}
+
+div.footer {
+	text-align: center;
+}
+
+div.right-align {
+	width: 70%;
+	padding: 10px;
+	text-align: right;
+	margin: auto;
+}
+
+input.customText {
+	background-color: white;
+	border: 1px solid grey;
+	color: black;
+	height: 24px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+input.customButton {
+	font-size: 16px;
+	background-color: #C8C8C8;
+	width: 120px;
+	height: 30px;
+	border: 1px solid grey;
+}
+input.customButton:hover {
+	background-color: #6DB2FF;
+}
+input.customButton:active {
+	background-color: red;
+}
+
+input[readonly] {
+    border: 0px;
+	font-family: inherit;
+	font-size: inherit;
+	padding-left: 0px;
+}
+table.itemLayout {
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+table.itemLayout tr:hover td {
+	background-color: #b8d1f3;
+}
+table.itemLayout td {
+	padding-right: 24px;
+}
