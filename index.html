@@ -5,20 +5,27 @@
 	<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
 	<script src="jquery/jquery-1.11.2.min.js"></script>
 	<script src="jquery/jquery-ui.min.js"></script>
+	<script> 
+		$(function(){
+			$("#header").load("header.html"); 
+		});
+		$(function(){
+			$("#menu").load("menu.html"); 
+		});
+		$(function(){
+			$("#footer").load("footer.html"); 
+		});
+    </script>
 </head>
 <body>
-	<div class="header">
-		Header
-	</div>
-	<div class="menu">
-		Menu
-	</div>
+	<div id="header"></div>
+	<div id="menu"></div>
+	
 	<div class="content">
 		<h2>cafe-predicting project</h2>
 		<p>Under construction...</p>
 	</div>
-	<div class="footer">
-		Footer
-	</div>
+	
+	<div class="footer"></div>
 </body>
 </html>
