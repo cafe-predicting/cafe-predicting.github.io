@@ -1,6 +1,7 @@
 body {
 	font-family: "Verdana", Arial, sans-serif;
-background-color: grey;
+	background-color: #f1f1f1;
+	padding: 12 32;
 }
 
 a {
@@ -15,15 +16,37 @@ a:hover {
 	color: red;
 }
 
+a.menu {
+	text-decoration: none;
+	color: white;
+	padding: 12 10 11 10;
+	font-size: 17px;
+}
+a.activeMenu {
+	color: white;
+	background-color: #00C425;
+}
+a:visited.menu {
+	text-decoration: none;
+	color: white;
+}
+a:hover.menu {
+	text-decoration: none;
+	color: black;
+	background-color: #3AF23A;
+}
+
 div.header {
 	text-align: center;
 }
 div.menu {
+	display: inline-block;
+	margin: 12px auto;
+}
+#menu {
+	height: 44px;
 	text-align: center;
-	background-color: white;
-	padding: 10px;
-	border: 2px solid black;
-	margin: auto;
+	background-color: #006446;
 	min-width: 1080px;
 	max-width: 1440px;
 }
@@ -46,8 +69,7 @@ div.menuBar a:active {
 
 div.content {
 	background-color: white;
-	padding: 10px;
-	border: 2px solid black;
+	padding: 12px;
 	margin: auto;
 	min-width: 1080px;
 	max-width: 1440px;
