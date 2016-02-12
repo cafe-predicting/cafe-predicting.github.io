@@ -1,9 +1,18 @@
-<div class="menu">
-	<p>
-		<a href="index.html">Home</a> | 
-		<a href="members.html">Members</a> | 
-		<a href="requirements.html">Requirements</a> | 
-		<a href="schedule.html">Schedule</a> | 
-		<a href="journal.html">Journal</a>
-	</p>
+<script>
+	$(document).ready(function() {
+		var currentUrl = window.location.href;
+		console.log(currentUrl);
+		var urlArray = currentUrl.split('/');
+		var pageName = urlArray[urlArray.length-1];
+		console.log(pageName);
+		var currentMenuItem = $(".menu[href='" + pageName + "']");
+		currentMenuItem.addClass("activeMenu");
+	});
+</script>
+<div class="menu" id="floatmenu">
+	<a class="menu" href="index.html">Home</a><!--
+ --><a class="menu" href="members.html">Members</a><!--
+ --><a class="menu" href="requirements.html">Requirements</a><!--
+ --><a class="menu" href="schedule.html">Schedule</a><!--
+ --><a class="menu" href="journal.html">Journal</a>
 </div>
