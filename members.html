@@ -2,7 +2,7 @@
 <head>
 	<title>cafe-predicting project</title>
 	<link rel="stylesheet" type="text/css" href="css/layout.css" />
-	<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+	<!--<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />-->
 	<script src="jquery/jquery-1.11.2.min.js"></script>
 	<script src="jquery/jquery-ui.min.js"></script>
 	<script> 
@@ -23,10 +23,26 @@
 	
 	<div class="content">
 		<h2>Team Members</h2>
-		<p>Chris Arnold</p>
-		<p>Cory Gray</p>
-		<p>Ryan Zembrodt</p>
+		<div id="tabs">
+			<ul>
+				<li class="tab"><a class="tab" href="#chris">Chris Arnold</a></li><!--
+			 --><li class="tab"><a class="tab" href="#cory">Cory Gray</a></li><!--
+			 --><li class="tab"><a class="tab" href="#ryan">Ryan Zembrodt</a></li>
+			</ul>
+			<div class="tab-content" id="chris">
+				<p>Chris's things</p>
+			</div>
+			<div class="tab-content" id="cory">
+				<p>Cory's things</p>
+			</div>
+			<div class="tab-content" id="ryan">
+				<p>Ryan's things</p>
+			</div>
+		</div>
 	</div>
+	<script>
+		$( "#tabs" ).tabs();
+	</script>
 	
 	<div id="footer"></div>
 </body>
