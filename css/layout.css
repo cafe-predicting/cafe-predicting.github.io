@@ -100,7 +100,7 @@ div.tab-content {
 	font-size: 16px;
 }
 
-div.content {
+div#main {
 	background-color: white;
 	padding-top: 12px;
 	margin: auto;
@@ -108,8 +108,17 @@ div.content {
 	max-width: 1440px;
 	min-height: 720px;
 }
+div.content {
+	margin: 12px;
+}
 div.content h2 {
 	text-align: center;
+}
+div.content h3 {
+	color: #008A44;
+}
+div.content p {
+	line-height: 32px;
 }
 
 div.footer {
