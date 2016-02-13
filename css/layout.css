@@ -119,6 +119,13 @@ div.content h3 {
 }
 div.content p {
 	line-height: 32px;
+	color: black;
+}
+div.content ul {
+	color: #008A44;
+}
+div.content li {
+	line-height: 32px;
 }
 
 div.footer {
