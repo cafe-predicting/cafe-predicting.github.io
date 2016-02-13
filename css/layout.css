@@ -1,5 +1,6 @@
 body {
 	font-family: "Verdana", Arial, sans-serif;
+	font-size: 16px;
 	background-color: #d3d3d3;
 	padding: 12 32;
 }
@@ -19,8 +20,12 @@ a:hover {
 a.menu {
 	text-decoration: none;
 	color: white;
-	padding: 12 10 11 10;
-	font-size: 17px;
+	padding: 11px 15px 11px 15px !important;
+	font-size: 110%;
+	display: inline-block;
+	-webkit-transition:background-color 0.3s ease, color 0.3s ease;
+	-moz-transition:background-color 0.3s ease, color 0.3s ease;
+	transition:background-color 0.3s ease, color 0.3s ease;
 }
 a.activeMenu {
 	color: white;
@@ -40,8 +45,6 @@ div.header {
 	text-align: center;
 }
 div.menu {
-	display: inline-block;
-	margin: 12px auto;
 }
 #menu {
 	height: 44px;
@@ -74,7 +77,7 @@ div#tabs {
 li.tab {
 	display: inline;
 	list-style-type: none;
-	font-size: 17px;
+	font-size: 125%;
 }
 li.ui-state-default {
 	padding: 12 0 11 0;
@@ -97,7 +100,6 @@ a:hover.tab {
 }
 div.tab-content {
 	text-align: left;
-	font-size: 16px;
 }
 
 div#main {
