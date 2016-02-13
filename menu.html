@@ -2,13 +2,12 @@
 	$(document).ready(function() {
 		var currentUrl = window.location.href;
 		console.log(currentUrl);
-		var pageName;
-		if (currentUrl == "cafe-predicting.github.io") {
+		var urlArray = currentUrl.split('/');
+		var pageName = urlArray[urlArray.length-1];
+		if (pageName == "") {
 			pageName = "index.html";
-		} else {
-			var urlArray = currentUrl.split('/');
-			pageName = urlArray[urlArray.length-1];
 		}
+		console.log(urlArray.toString());
 		console.log(pageName);
 		var currentMenuItem = $(".menu[href='" + pageName + "']");
 		currentMenuItem.addClass("activeMenu");
