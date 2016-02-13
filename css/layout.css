@@ -77,13 +77,16 @@ div#tabs {
 li.tab {
 	display: inline;
 	list-style-type: none;
-	font-size: 125%;
+	font-size: 110%;
 }
 li.ui-state-default {
 	padding: 12 0 11 0;
+	-webkit-transition:background-color 0.3s ease, color 0.3s ease;
+	-moz-transition:background-color 0.3s ease, color 0.3s ease;
+	transition:background-color 0.3s ease, color 0.3s ease;
 }
 li.ui-tabs-active {
-	color: white;
+	color: black;
 	background-color: #00C425;
 }
 li.ui-state-hover {
@@ -96,7 +99,7 @@ a.tab {
 	padding: 12 10 11 10;
 }
 a:hover.tab {
-	color: white;
+	color: black;
 }
 div.tab-content {
 	text-align: left;
