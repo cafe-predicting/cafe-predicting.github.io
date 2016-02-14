@@ -164,22 +164,30 @@ div.footer {
 div#months {
     display: inline-block;
     float: left;
+	background-color: #006446;
+	padding: 32 8 0 8;
+    text-align: center;
 }
 div#months h3 {
 	cursor:pointer;
+	color: white;
+}
+div#months p {
+	color: white;
 }
 div#months a {
 	display: block;
 	text-align: center;
 	line-height: 32px;
-	color: black;
+	color: white;
+	width: 100%;
 	-webkit-transition:background-color 0.3s ease, color 0.3s ease;
 	-moz-transition:background-color 0.3s ease, color 0.3s ease;
 	transition:background-color 0.3s ease, color 0.3s ease;
+	border-radius: 4px 0 0 4px;
 }
 div#months a:visited {
 	text-decoration: none;
-	color: black;
 }
 div#months a:hover {
 	text-decoration: none;
@@ -187,8 +195,10 @@ div#months a:hover {
 	background-color: #3AF23A;
 }
 div#months a.current {
-	color: white;
-	background-color: #00C425;
+	color: black;
+	background-color: white;
+	border-radius: 4px 0 0 4px;
+	
 }
 div#activity-entry {
 	display: inline-block;
