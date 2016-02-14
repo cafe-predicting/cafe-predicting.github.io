@@ -80,12 +80,24 @@ div.menuBar a:active {
 }
 
 div#tabs {
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+}
+div#tabs ul {
 	text-align: center;
+	background-color: #006446;
+	float: left;
+	height: 100%;
+	margin-top: 0px;
 }
 li.tab {
-	display: inline;
 	list-style-type: none;
 	font-size: 110%;
+    float: left;
+	clear: left;
+	width: 100%;
+	border-radius: 4px 0 0 4px;
 }
 li.ui-state-default {
 	padding: 12 0 11 0;
@@ -94,8 +106,10 @@ li.ui-state-default {
 	transition:background-color 0.3s ease, color 0.3s ease;
 }
 li.ui-tabs-active {
+	background-color: white;
+}
+li.ui-tabs-active a {
 	color: black;
-	background-color: #00C425;
 }
 li.ui-state-hover {
 	text-decoration: none;
@@ -103,26 +117,31 @@ li.ui-state-hover {
 	background-color: #3AF23A;
 }
 a.tab {
-	color: black;
+	color: white;
 	padding: 12 10 11 10;
 }
 a:hover.tab {
 	color: black;
 }
 div.tab-content {
+	padding-top: 64px;
+	padding-left: 32px;
 	text-align: left;
+	float: left;
+	position: relative;
 }
 
 div#main {
 	background-color: white;
-	padding-top: 12px;
 	min-height: 720px;
 }
 div.content {
-	margin: 12px;
+	margin: 0 12px 12px 12px;
 }
 div.content h2 {
 	text-align: center;
+	margin-top: 0;
+	padding-top: 16px;
 }
 div.content h3 {
 	color: #008A44;
@@ -175,6 +194,10 @@ div#activity-entry {
 	display: inline-block;
     padding-top: 32px;
 	padding-left: 32px;
+}
+
+div.buffer {
+	padding-top: 16px;
 }
 
 div.right-align {
