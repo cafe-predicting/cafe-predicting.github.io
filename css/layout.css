@@ -146,6 +146,9 @@ div#months {
     display: inline-block;
     float: left;
 }
+div#months h3 {
+	cursor:pointer;
+}
 div#months a {
 	display: block;
 	text-align: center;

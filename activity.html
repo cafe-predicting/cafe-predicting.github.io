@@ -27,24 +27,27 @@
 		<div id="months">
 			<h3>January 2016</h3>
 			<div>
-				<a id="01152016" href="#" class="entry"></a><!--
-				-->
-				<a id="01162016" href="#" class="entry"></a><!--
+				<a id="01292016" href="#" class="entry"></a><!--
 				-->
 			</div>
 			<h3>February 2016</h3>
 			<div>
+				<a id="02052016" href="#" class="entry"></a><!--
+				-->
 				<a id="02082016" href="#" class="entry"></a><!--
 				-->
 			</div>
 			<h3>March 2016</h3>
 			<div>
+				<p>No entries</p>
 			</div>
 			<h3>April 2016</h3>
 			<div>
+				<p>No entries</p>
 			</div>
 			<h3>May 2016</h3>
 			<div>
+				<p>No entries</p>
 			</div>
 		</div>
 		<div id="activity-entry">
@@ -69,7 +72,9 @@
 		});
 		$(function() {
 			$("#months").accordion({
-				collapsible:true
+				collapsible:true,
+				heightStyle:"content",
+				animate:100
 			});
 		});
 		
@@ -80,7 +85,7 @@
 			}
 			$(el).addClass("current");
 			currentEntry = el;
-			$("#activity-entry").load(id + ".html");
+			$("#activity-entry").load("activity-entries/" + id + ".html");
 			//$("#activity-entry").text(id + ".html");
 		}
 	</script>
