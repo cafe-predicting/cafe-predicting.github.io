@@ -41,18 +41,26 @@ a:hover.menu {
 	background-color: #3AF23A;
 }
 
-div.header {
-	text-align: center;
+div#header, div#menu, div#main, div#footer {
+	min-width: 960px;
+	width: 80%;
+	max-width: 1440px;
+	margin: auto;
 }
+
+div#header {
+}
+div#header h1 {
+	color: #008A44;
+	font-size: 150%;
+}
+
 div.menu {
 }
-#menu {
+div#menu {
 	height: 44px;
 	text-align: center;
-	margin: auto;
 	background-color: #006446;
-	min-width: 1080px;
-	max-width: 1440px;
 }
 div.searchbar {
 	text-align: left;
@@ -108,9 +116,6 @@ div.tab-content {
 div#main {
 	background-color: white;
 	padding-top: 12px;
-	margin: auto;
-	min-width: 1080px;
-	max-width: 1440px;
 	min-height: 720px;
 }
 div.content {
