@@ -142,6 +142,38 @@ div.footer {
 	text-align: center;
 }
 
+div#months {
+    display: inline-block;
+    float: left;
+}
+div#months a {
+	display: block;
+	text-align: center;
+	line-height: 32px;
+	color: black;
+	-webkit-transition:background-color 0.3s ease, color 0.3s ease;
+	-moz-transition:background-color 0.3s ease, color 0.3s ease;
+	transition:background-color 0.3s ease, color 0.3s ease;
+}
+div#months a:visited {
+	text-decoration: none;
+	color: black;
+}
+div#months a:hover {
+	text-decoration: none;
+	color: black;
+	background-color: #3AF23A;
+}
+div#months a.current {
+	color: white;
+	background-color: #00C425;
+}
+div#activity-entry {
+	display: inline-block;
+    padding-top: 32px;
+	padding-left: 32px;
+}
+
 div.right-align {
 	width: 70%;
 	padding: 10px;

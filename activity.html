@@ -2,7 +2,7 @@
 <head>
 	<title>cafe-predicting project</title>
 	<link rel="stylesheet" type="text/css" href="css/layout.css" />
-	<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+	<!--<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />-->
 	<script src="jquery/jquery-1.11.2.min.js"></script>
 	<script src="jquery/jquery-ui.min.js"></script>
 	<script> 
@@ -24,10 +24,65 @@
 	<div id="main">
 	<div class="content">
 		<h2>Project Activity</h2>
-		<p>02/08/2016 - Project website launch.</p>
+		<div id="months">
+			<h3>January 2016</h3>
+			<div>
+				<a id="01152016" href="#" class="entry"></a><!--
+				-->
+				<a id="01162016" href="#" class="entry"></a><!--
+				-->
+			</div>
+			<h3>February 2016</h3>
+			<div>
+				<a id="02082016" href="#" class="entry"></a><!--
+				-->
+			</div>
+			<h3>March 2016</h3>
+			<div>
+			</div>
+			<h3>April 2016</h3>
+			<div>
+			</div>
+			<h3>May 2016</h3>
+			<div>
+			</div>
+		</div>
+		<div id="activity-entry">
+		</div>
 	</div>
 	</div>
 	
 	<div id="footer"></div>
+	<script>
+		var currentEntry;
+	
+		$(document).ready(function() {
+			$("a").each(function() {
+				if ($(this).attr('class') == "entry") {
+					$(this).click(function() {
+						loadEntry(this);
+					});
+					var id = $(this).attr('id');
+					$(this).text(id.substr(0,2) + "/" + id.substr(2,2) + "/" + id.substr(4,4));
+				}
+			});
+		});
+		$(function() {
+			$("#months").accordion({
+				collapsible:true
+			});
+		});
+		
+		function loadEntry(el) {
+			var id = $(el).attr('id');
+			if (currentEntry != 'undefined') {
+				$(currentEntry).removeClass("current");
+			}
+			$(el).addClass("current");
+			currentEntry = el;
+			$("#activity-entry").load(id + ".html");
+			//$("#activity-entry").text(id + ".html");
+		}
+	</script>
 </body>
 </html>
