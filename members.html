@@ -7,13 +7,12 @@
 	<script src="jquery/jquery-ui.min.js"></script>
 	<script> 
 		$(function(){
-			$("#header").load("header.html"); 
-		});
-		$(function(){
-			$("#menu").load("menu.html"); 
-		});
-		$(function(){
-			$("#footer").load("footer.html"); 
+			$("#header").load("header.html");
+			$("#menu").load("menu.html");
+			$("#footer").load("footer.html");
+			$("#ryan").load("members/ryan.html");
+			$("#chris").load("members/chris.html");
+			$("#cory").load("members/cory.html");
 		});
     </script>
 </head>
@@ -21,25 +20,21 @@
 	<div id="header"></div>
 	<div id="menu"></div>
 	
-	
 	<div id="main">
 	<div class="content">
-		<h2>Team Members</h2>
+		<h2 style="position: absolute; left: 0; right: 0;">Team Members</h2>
 		<div id="tabs">
 			<ul>
+				<div class="buffer"></div>
+				<div class="buffer"></div>
+				<div class="buffer"></div>
 				<li class="tab"><a class="tab" href="#chris">Chris Arnold</a></li><!--
 			 --><li class="tab"><a class="tab" href="#cory">Cory Gray</a></li><!--
 			 --><li class="tab"><a class="tab" href="#ryan">Ryan Zembrodt</a></li>
 			</ul>
-			<div class="tab-content" id="chris">
-				<p>Chris's things</p>
-			</div>
-			<div class="tab-content" id="cory">
-				<p>Cory's things</p>
-			</div>
-			<div class="tab-content" id="ryan">
-				<p>Ryan's things</p>
-			</div>
+			<div class="tab-content" id="chris"></div>
+			<div class="tab-content" id="cory"></div>
+			<div class="tab-content" id="ryan"></div>
 		</div>
 	</div>
 	</div>
