@@ -132,6 +132,7 @@ div.tab-content {
 	text-align: left;
 	float: left;
 	position: relative;
+	width: 75%;
 }
 
 div#main {
