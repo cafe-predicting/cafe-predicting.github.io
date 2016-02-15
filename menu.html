@@ -7,6 +7,9 @@
 		if (pageName == "") {
 			pageName = "index.html";
 		}
+		if (pageName.charAt(pageName.length-1) == "#") {
+			pageName = pageName.substr(0, pageName.length-1);
+		}
 		console.log(urlArray.toString());
 		console.log(pageName);
 		var currentMenuItem = $(".menu[href='" + pageName + "']");
