@@ -119,6 +119,9 @@ li.ui-state-hover {
 	color: black;
 	background-color: #3AF23A;
 }
+li.ui-state-focus {
+	outline-color: transparent;
+}
 a.tab {
 	color: white;
 	padding: 12 10 11 10;
