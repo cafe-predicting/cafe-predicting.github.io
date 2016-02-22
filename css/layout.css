@@ -81,7 +81,6 @@ div.menuBar a:active {
 
 div#tabs {
 	display: inline-block;
-	height: 100%;
 	width: 100%;
 }
 div#tabs ul {
