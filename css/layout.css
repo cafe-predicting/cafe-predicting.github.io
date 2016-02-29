@@ -21,7 +21,7 @@ a.menu {
 	text-decoration: none;
 	color: white;
 	padding: 11px 15px 11px 15px !important;
-	font-size: 110%;
+	font-size: 115%;
 	display: inline-block;
 	-webkit-transition:background-color 0.3s ease, color 0.3s ease;
 	-moz-transition:background-color 0.3s ease, color 0.3s ease;
@@ -215,6 +215,8 @@ div#activity-entry {
 	display: inline-block;
     padding-top: 32px;
 	padding-left: 32px;
+	position: relative;
+	width: 80%;
 }
 
 div.buffer {
