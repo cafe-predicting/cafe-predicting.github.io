@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+		<link rel="stylesheet" type="text/css" href="css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+		<script src="jquery/jquery-1.11.2.min.js"></script>
+		<script src="jquery/jquery-ui.min.js"></script>
+	</head>
+
+	<body>
+		<div id="header">
+			<h1>Cafe Predicting</h1>
+		</div>
+		<div id="menu">
+		<!--<div class="menu" id="floatmenu">-->
+			<a class="menu" href="index.html">Home</a><!--
+		 --><a class="menu" href="members.html">Members</a><!--
+		 --><a class="menu" href="requirements.html">Requirements</a><!--
+		 --><a class="menu" href="schedule.html">Schedule</a><!--
+		 --><a class="menu" href="activity.html">Activity</a>
+		<!--</div>-->
+		</div>
+		<div id="main">
+			<div class="cotent">
+				{{ content }}
+			</div>
+		</div>
+		<div id="footer">
+		</div>
+		<script>
+		$(document).ready(function() {
+			var currentUrl = window.location.href;
+			console.log(currentUrl);
+			var urlArray = currentUrl.split('/');
+			var pageName = urlArray[urlArray.length-1];
+			if (pageName == "") {
+				pageName = "index.html";
+			}
+			if (pageName.charAt(pageName.length-1) == "#") {
+				pageName = pageName.substr(0, pageName.length-1);
+			}
+			console.log(urlArray.toString());
+			console.log(pageName);
+			var currentMenuItem = $(".menu[href='" + pageName + "']");
+			currentMenuItem.addClass("activeMenu");
+		});
+		</script>
+	</body>
+</html>
