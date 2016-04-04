@@ -1,0 +1,98 @@
+<html> 
+<head> 
+<title>Testing</title> 
+<link rel="stylesheet" type="text/css" href="css/layout.css" /> 
+<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" /> 
+<script src="jquery/jquery-1.11.2.min.js"></script> 
+<script src="jquery/jquery-ui.min.js"></script> 
+<script>  
+	$(function(){ 
+			$("#header").load("header.html");  
+		}); 
+		$(function(){ 
+			$("#menu").load("menu.html");  
+		}); 
+		$(function(){ 
+			$("#footer").load("footer.html");  
+		}); 
+   </script> 
+</head>
+
+<body> 
+	<div id="header"></div> 
+	<div id="menu"></div> 
+	 
+	<div id="main"> 
+	<div class="content"> 
+		<h2>Test Plan</h2> 
+		 
+
+ 		 
+ 		<h3>Unit Testing</h3> 
+    		First, we test our prediction models to ensure sufficient accuracy using the mean absolute scaled error (MASE) method. Then, we test the application itself.
+ 		<ul> 
+			<li><span class="black-text">Login page</span>
+			  <ul>
+			    <li><span class="black-text">Loads correctly when application is opened</span></li>
+			    <li><span class="black-text">Accepts only valid usernames and password combinations</span></li>
+			  </ul>
+			</li>
+			<li><span class="black-text">Home Screen</span>
+			  <ul>
+			    <li><span class="black-text">Loads correctly after user logs in</span></li>
+			    <li><span class="black-text">Each button/link on the home screen redirects the user to the correct page</span></li>
+			    <li><span class="black-text">Log out button should correctly log the user out</span></li>
+			  </ul>
+			</li>
+			<li><span class="black-text">Model Screens</span>
+			  <ul>
+			    <li><span class="black-text">Load correctly from home screen</span></li>
+			    <li><span class="black-text">Each input field accepts only valid information (ex: temperature field should not accept non-numeric characters)</span></li>
+			    <li><span class="black-text">Submit button updates display graph on screen</span></li>
+			    <li><span class="black-text">Display graph has appropriate ranges on its axes which are properly labeled</span></li>
+			    <li><span class="black-text">Graph’s prediction display is in accordance with numeric predictions (eg: if model predicts 80 customers in a given time frame, the graph should not have a marker at 40 or a line going through 100)</span></li>
+			    <li><span class="black-text">Tabs at the top of the screen should redirect user to the correct page</span></li>
+			    <li><span class="black-text">Return button should redirect user to the home page</span></li>
+			  </ul>
+			</li>
+ 		</ul>
+ 		
+ 		<br>
+ 		<h3>Integration/Function Testing</h3>
+		 <ul>
+	    		<li><span class="black-text">The user can login using valid credentials, and is redirected to the home screen</span></li>
+	    		<li><span class="black-text">The user is given a warning message and remains at the login page when invalid credentials are given</span></li>
+	    		<li><span class="black-text">All navigation components (buttons, icons, tabs) redirect the user to the correct location</span></li>
+	    		<li><span class="black-text">Predictions are generated in the model screens when the user enters valid input parameters and presses submit</span></li>
+			<li><span class="black-text">Informative error messages are generated when the user supplies invalid input in the model screens</span></li>
+	    		<li><span class="black-text">Predictions given by models in the application match expected predictions given the entered parameters</span></li>
+	  	</ul>
+	  
+	  	<br>
+	  	<h3>System Testing</h3>
+		 Because the product is a web-based application, compatibility issues primarily arise with respect to the user’s web browser, as opposed to the computer hardware or operating system being used.
+	  	<br>
+		 <ul>
+	    		<li><span class="black-text">Ensure that the application runs in the most recent versions of Mozilla Firefox and Google Chrome</span></li>
+	    		<li><span class="black-text">Verify basic compatibility for other web browsers, including Internet Explorer 11, Microsoft Edge, and Safari</span></li>
+	    		<li><span class="black-text">Verify the application loads in Microsoft Windows and OS X</span></li>
+	  	</ul>
+	  
+	  	<br>
+	  	<h3>User Testing</h3>
+	  	The marketed users of this product are cafe/store owners or managers, who may have limited technical experience. The objective of user testing is then to ensure that the product is informative and intuitive enough to be used effectively by adults with non-technical backgrounds.
+	  	<br>
+	  	<ul>
+	    		<li><span class="black-text">The user feels comfortable navigating between screens within the web application</span></li>
+	    		<li><span class="black-text">The user is content with the aesthetic of the application</span></li>
+	    		<li><span class="black-text">The user can understand what input is necessary for a model’s prediction, and how to provide valid input</span></li>
+			<li><span class="black-text">The user can interpret a model’s output easily without knowledge of the particular model</span></li>
+	    		<li><span class="black-text">Error messages are informative and helpful in correcting the user</span></li>
+	  	</ul>
+	  
+	</div> 
+	</div> 
+	 
+ 	<div id="footer"></div> 
+</body> 
+</html> 
