@@ -25,17 +25,62 @@
 	<div class="content">
 		<h2>Cafe Data Project</h2>
 		<h3>Abstract</h3>
-		<p>In today's world, living in a connected society is making the gathering of data easier and more accessible.
-			It is now becoming possible to better detect trends and make predictions in people from this data and using
-			simple machine learning, this detection can become automated. The results of this data and prediction models
-			can be beneficial to a business owner to run their business.
+		<p>The steady growth of digital storage capacities and the connection of an increasing variety of devices to the
+		internet allows for the collection of data sets so large and complex that traditional methods of data processing are
+		 rendered obsolete. While such data sets generally prove challenging to analyze, their sheer scope and comprehensiveness
+		 provide many opportunities to identify subtle trends in business, crime, and information. For this reason, many modern
+		 scientists and analysts employ machine learning and data mining techniques, allowing for the automation of big data
+		 analysis and rendering the process of identifying trends and relationships in large data sets much more efficient.
+		</p>
+		<p>
+			We present a web application which makes predictions about customer activity at a local cafe, based on factors such as
+			time of day, external weather conditions, and advertising decisions. Predictions are made using models generated through
+			machine learning algorithms, including regression and decision trees, applied to multiple large data sets provided by Dr.
+			Julie Whitney of Lexmark International, Inc. and collected from a Lexmark campus café. The predictions made by the
+			application achieve an average of at least 80% accuracy (using the Mean Absolute Scaled Error).
 		</p>
 		<h3>Project Description</h3>
-		<p>Using sample data from a cafeteria at Lexmark over a two month period, 
-			We are developing three seperate machine learning algorithms to predict outcomes of three different problems
-			pertaining to a set of sample data from a cafeteria at Lexmark over a two month period. Using these algorithms,
-			we will create a dashboard to allow the cafeteria owner manipulate the data in order to gather useful predictive
-			information from the trends.
+		<p><u>Objective</u></p>
+		<p>
+		The purpose of this project is to provide a web-based application that allows the user, an owner or manager of a café
+		or restaurant, to estimate staffing and supply needs based upon predicted customer activity, based upon a user-modifiable
+		time scale and input parameters. This allows for more efficient utilization of physical resources and personnel, 
+		potentially reducing overhead costs and increasing net profits.
+		</p>
+		<p><u>Background</u></p>
+		<p>
+		In February 2016, Dr. Julie Whitney, senior technical staff member at Lexmark International, Inc., presented our team
+		with a large data set (described below) collected from a café serving Lexmark employees and visitors to the Lexmark 
+		campus. We were then tasked with using machine learning techniques to analyze the data sets and obtain models for 
+		predicting future customer activity. After initial exploration, we divided the data into two sets, one for training our
+		models, and one for testing them. We then applied regression and decision tree algorithms to the training set to obtain
+		predictive models, which we then refined until the models’ predictions achieved 80% accuracy when compared to actual
+		results from the testing set of the collected data. At this point, the models were implemented into a web application
+		which allows the user to choose between models and adjust input parameters based upon their needs.
+		</p>
+
+		<p><u>The Data Set</u></p>
+		<p>
+		Included in the data set provided by Dr. Whitney are the following essential data points: </br>
+		<ul>
+			<li>Date and time of purchase (a string in format MM/DD/YYYY hh:mm)</li>
+			<li>Item(s) purchased (given by integer item IDs)</li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+•	Perceived customer age group: unknown, child, young adult, adult, or senior (represented by integers from 0 to 4, respectively)
+•	Perceived customer sex: unknown, male, or female (represented by integers from 0 to 2, respectively)
+•	Time spent in the vicinity of an advertising screen (an integer in milliseconds)
+•	Time spent looking at the advertising screen (an integer in milliseconds)
+•	Item being advertised at time of purchase (an integer item ID)
+•	External temperature (an integer value representing degrees Fahrenheit)
+•	External humidity (an integer between 0 and 100 representing relative humidity percentage)
+•	External precipitation state (one of the following strings: “Clear”, “Clouds”, “Mist”, “Rain”, “Snow”)
+(Note: Some of the supplied data points have been fabricated to protect customer identities.) Our team will examine the relationships between these data point in order to find useful trends.
+
 		</p>
 	</div>
 	</div>
